@@ -50,3 +50,62 @@
 #          n//=10
 # print(s)
 #6
+# # kalkulator
+# while True:
+#     a=input()
+#     if a!="=":
+#         b=input()
+#         if b=="+":
+#             if b!="=":
+#                 c=float(input())
+#                 print(float(a)+c)
+#             else:
+#                 break
+#         elif b=="-":
+#             if b!="=":
+#                 c=float(input())
+#                 print(float(a)-c)
+#             else:
+#                 break
+#         elif b=="*":
+#             if b!="=":
+#                 c=float(input())
+#                 print(float(a)*c)
+#             else:
+#                 break
+#         elif b=="/":
+#             if b!="=":
+#                 c=float(input())
+#                 if c!="0":
+#                     print(float(a)/c)
+#                 else:
+#                     print("maxraj nolga teng bo'la olmaydi")
+#             else:
+#                 break
+#     else:
+#         break
+s=0
+while True:
+    a=input()
+    b=input()
+    if b=="+":
+        c=input()
+        s=float(a)+float(c)
+    elif b=="-":
+        c=input()
+        s=s-float(c)
+    elif b=="*":
+        c=input()
+        s=s*float(c)
+    elif a=="/":
+        c=input()
+        if c!=0:
+           s=s/float(c)
+        else:
+            print("maxraj nol bo'la olmaydi")
+    elif b=="=":
+        print(s)
+    elif a=="=":
+        print(s)
+    elif c=="=":
+        print(s)
